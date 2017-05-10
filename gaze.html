@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
 
     <meta charset="utf-8">
@@ -73,18 +73,51 @@
         <!-- /.row -->
 
         <!-- Projects Row -->
-        
-            <div class="col-md-6 portfolio-item">
-                <br><a href="#">
-                   <center> <img class="img-responsive" src="./images/gaze/slides_search.jpg" alt="" align="middle"> </center>
-                </a></br>
-               <br><a href="#">
-                   <center> <img class="img-responsive" src="./images/gaze/slides_search2.jpg" alt="" align="middle"> </center>
-                </a></br>
 
-                <h3>
-                    <a href="#">Gaze: Video Analysis with Deep Learning</a>
-                </h3>
+
+
+
+
+
+
+<h4><center>Demo Results</h4></center>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./images/gaze/screenshotClear.jpg" style="width:100%">
+  <img class="mySlides" src="./images/gaze/screenshotClear2.jpg" style="width:100%">
+  <img class="mySlides" src="./images/gaze/screenshotClear3.jpg" style="width:100%">
+    <img class="mySlides" src="./images/gaze/screenshotClear4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<br><p>
+<center><h4><a href="https://devpost.com/software/gaze-09xkmb#">View the Devpost!</a></h4></center>
+</p></br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+                
+<h3><p style="color:#3399ff">Gaze: Video Analysis with Deep Learning</p></h3>
+            
                 <p><b>Winner at HackMIT 2016: Best Use of Microsoft Technology</p>
                 <p> Winner at HackMIT 2016: Best Use of Emerging Technology (Disney) </p></b>
                 <p>Deep learning as a tool can have a huge impact in the media industry. With visual and audio content taking over 70% of the internet, people often struggle with navigating through un-organized media content. Our goal is to transform cluttered video content into a simplified and streamlined navigating experience.</p>
